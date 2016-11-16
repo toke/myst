@@ -18,17 +18,20 @@ makedepends=('ncurses')
 url="http://st.suckless.org"
 
 source=(http://dl.suckless.org/st/$appname-$pkgver.tar.gz
+        http://st.suckless.org/patches/st-externalpipe-0.6.diff
         http://st.suckless.org/patches/st-no_bold_colors-0.6.diff
         http://st.suckless.org/patches/st-solarized-dark-0.6.diff
-        https://raw.githubusercontent.com/joelmatth/st/master/st-inconsolata-dz-for-powerline-aa.diff)
+        https://raw.githubusercontent.com/toke/myst/master/st-inconsolata-dz-for-powerline-aa.diff)
 
 md5sums=('1a926f450b4eacb7e2f5ac5b8ffea7c8'
+         '9ee68fc36d981aebdbedb04d5da15784'
          '318bffa6a563970754554694107b1ca1'
          'cd75677133a2d6b3111fec5ae1b466bd'
-         'b5fe613eb22b2d6e95bf3c8ef03220dc')
+         'a9413630fb89bc8fdea6fe7891ecf55c')
 
 build() {
   cd $srcdir/$appname-$pkgver
+  patch -i $srcdir/st-externalpipe-0.6.diff
   patch -i $srcdir/st-no_bold_colors-0.6.diff
   patch -i $srcdir/st-solarized-dark-0.6.diff
   patch -i $srcdir/st-inconsolata-dz-for-powerline-aa.diff
