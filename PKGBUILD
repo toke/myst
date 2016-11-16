@@ -27,7 +27,7 @@ md5sums=('1a926f450b4eacb7e2f5ac5b8ffea7c8'
          '9ee68fc36d981aebdbedb04d5da15784'
          '318bffa6a563970754554694107b1ca1'
          'cd75677133a2d6b3111fec5ae1b466bd'
-         '745715f073520fce32fe044ba634093b')
+         'b0fd749bd9aff7a286bd5618ba386f45')
 
 build() {
   cd $srcdir/$appname-$pkgver
