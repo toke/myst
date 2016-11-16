@@ -1,0 +1,11 @@
+--- a/config.def.h	2014-10-22 17:21:50.894100927 +0100
++++ b/config.def.h	2014-10-22 17:24:12.940762685 +0100
+@@ -5,7 +5,7 @@
+  *
+  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
+  */
+-static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
++static char font[] = "Inconsolata-dz for Powerline:pixelsize=12:antialias=true:autohint=true";
+ static int borderpx = 2;
+ static char shell[] = "/bin/sh";
+ static char *utmp = NULL;
