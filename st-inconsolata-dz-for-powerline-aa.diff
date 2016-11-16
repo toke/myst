@@ -1,5 +1,5 @@
---- config.def.h	2016-11-16 02:11:27.997579948 +0100
-+++ config.def.h.orig	2016-11-16 02:09:55.185654651 +0100
+--- a/config.def.h	2016-11-16 02:11:27.997579948 +0100
++++ b/config.def.h	2016-11-16 02:09:55.185654651 +0100
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
