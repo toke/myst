@@ -9,12 +9,11 @@
  static int borderpx = 2;
  static char shell[] = "/bin/sh";
  static char *utmp = NULL;
-@@ -163,6 +183,8 @@
+@@ -163,6 +163,7 @@
         { MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
         { MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
         { MODKEY,               XK_Control_L,   iso14755,       {.i =  0} },
 +        { MODKEY, 'u', externalpipe, { .v = "xurls | dmenu -l 10 | xargs -r open" } },
-+
  };
 
  /*
