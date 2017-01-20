@@ -1,19 +1,19 @@
---- config.def.h.orig	2016-11-16 02:38:12.977105640 +0100
-+++ config.def.h	2016-11-16 10:34:18.027442168 +0100
+--- config.def.h.orig	2017-01-21 00:03:50.799369850 +0100
++++ config.def.h	2017-01-21 00:06:24.612710136 +0100
 @@ -5,7 +5,7 @@
   *
   * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
   */
--static char font[] = "Liberation Mono:pixelsize=12:antialias=false:autohint=false";
+-static char font[] = "Liberation Mono:pixelsize=12:antialias=true:autohint=true";
 +static char font[] = "Inconsolata-dz for Powerline:pixelsize=14:antialias=true:autohint=true";
  static int borderpx = 2;
- static char shell[] = "/bin/sh";
- static char *utmp = NULL;
-@@ -128,6 +128,7 @@
- 	{ MODKEY|ShiftMask,     XK_C,           clipcopy,       {.i =  0} },
+ 
+ /*
+@@ -185,6 +185,7 @@
  	{ MODKEY|ShiftMask,     XK_V,           clippaste,      {.i =  0} },
  	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
-+        { MODKEY, 'u', externalpipe, { .v = "xurls | dmenu -l 10 | xargs -r open" } },
+ 	{ XK_ANY_MOD,           XK_F6,          swapcolors,     {.i =  0} },
++        { MODKEY,               'u',            externalpipe,   {.v = "xurls | dmenu -l 10 | xargs -r open" } },
  };
  
  /*
