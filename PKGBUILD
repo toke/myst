@@ -27,7 +27,7 @@ md5sums=(
          '29b2a599cf1511c8062ed8f025c84c63'
          'c54c87489342b8d77c6dd8f3c2ff997e'
          'b7219cf14d214086c9bb573cc87d1465'
-         '93619788308cd88b73a7a978cb80cb3d'
+         'fe644917dd56b371be5c9d54a6082318'
          )
 
 build() {
