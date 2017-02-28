@@ -14,8 +14,9 @@ pkgdesc='A simple virtual terminal emulator for X. Patched for solarized
 colorscheme and Inconsolata-dz for Powerline font with anti-aliasing.'
 arch=('i686' 'x86_64')
 license=('MIT')
-depends=('libxext' 'libxft')
+depends=('libxft' 'libxext' 'xorg-fonts-misc')
 makedepends=('ncurses')
+
 url="http://st.suckless.org"
 
 source=(http://dl.suckless.org/st/$appname-$pkgver.tar.gz
@@ -34,7 +35,7 @@ md5sums=(
 prepare() {
   cd $srcdir/$appname-$pkgver
   # skip terminfo which conflicts with nsurses
-  sed -i '/\@tic /d' Makefile
+  #sed -i '/\@tic /d' Makefile
   #cp $srcdir/config.h config.h
 }
 
