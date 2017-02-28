@@ -3,7 +3,7 @@
 # Maintainer: Mikhail Burakov <mikhail.burakov gmail com>
 # Maintainer: Joel Matthews <joelmatth gmail com>
 
-pkgname=st-solarized-inconsolata-dz-powerline-aa
+pkgname=st-toke
 appname='st'
 conflicts=(${appname})
 provides=(${appname})
