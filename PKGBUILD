@@ -7,8 +7,9 @@ pkgname=st-solarized-inconsolata-dz-powerline-aa
 appname='st'
 conflicts=(${appname})
 provides=(${appname})
+replaces=('st')
 pkgver=0.7
-pkgrel=1
+pkgrel=3
 pkgdesc='A simple virtual terminal emulator for X. Patched for solarized
 colorscheme and Inconsolata-dz for Powerline font with anti-aliasing.'
 arch=('i686' 'x86_64')
@@ -29,6 +30,13 @@ md5sums=(
          'b7219cf14d214086c9bb573cc87d1465'
          'fe644917dd56b371be5c9d54a6082318'
          )
+
+prepare() {
+  cd $srcdir/$appname-$pkgver
+  # skip terminfo which conflicts with nsurses
+  sed -i '/\@tic /d' Makefile
+  #cp $srcdir/config.h config.h
+}
 
 build() {
     cd $srcdir/$appname-$pkgver
