@@ -1,7 +1,5 @@
-# Contributor: Patrick Jackson <PatrickSJackson gmail com>
-# Maintainer: Christoph Vigano <mail@cvigano.de>
-# Maintainer: Mikhail Burakov <mikhail.burakov gmail com>
-# Maintainer: Joel Matthews <joelmatth gmail com>
+# Maintainer: Thomas Kerpe <toke@toke.de>
+# Description: PACKAGE only for my Workstation
 
 pkgname=st-toke
 appname='st'
@@ -9,7 +7,7 @@ conflicts=(${appname})
 provides=(${appname})
 replaces=('st')
 pkgver=0.7
-pkgrel=3
+pkgrel=4
 pkgdesc='A simple virtual terminal emulator for X. Patched for solarized
 colorscheme and Inconsolata-dz for Powerline font with anti-aliasing.'
 arch=('i686' 'x86_64')
