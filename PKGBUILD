@@ -47,7 +47,7 @@ build() {
 
 package() {
     cd $srcdir/$appname-$pkgver
-    make PREFIX=/usr DESTDIR="$pkgdir" TERMINFO="$pkgdir/usr/share/terminfo" install
+    make PREFIX=/usr DESTDIR="$pkgdir" install
     install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$appname/LICENSE"
     install -Dm644 README "$pkgdir/usr/share/doc/$appname/README"
 }
